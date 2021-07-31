@@ -1,0 +1,21 @@
+@import '../../theme/layout.less';
+@import '../index.less';
+
+main {
+    height: calc(100vh - @headerHeight);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .boardSection {
+        width: @boardWidth;
+        height: 100%;
+        border: 1px solid #ddd;
+        background-color: @backgroundColor;
+    }
+    .workspaceSection {
+        width: @workspaceWidth;
+        height: 100%;
+        background-color: #f5f5f5;
+    }
+}
